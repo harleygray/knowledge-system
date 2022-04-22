@@ -5,7 +5,7 @@
 
   import { appWebsocketContext, appInfoContext } from './contexts';
   import CreateEntryDef0 from './components/knowledge_system/profiles/CreateEntryDef0.svelte';
-import EntryDef0Detail from './components/knowledge_system/profiles/EntryDef0Detail.svelte';
+  import EntryDef0Detail from './components/knowledge_system/profiles/EntryDef0Detail.svelte';
 
   let appWebsocket: AppWebsocket | undefined;
   let appInfo: InstalledAppInfo | undefined;

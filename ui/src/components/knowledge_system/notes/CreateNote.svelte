@@ -28,7 +28,7 @@ async function createNote() {
         timestamp: timestamp!,
   };
 
-  
+
   const { entryHash } = await appWebsocket.callZome({
     cap_secret: null,
     cell_id: cellData.cell_id,
@@ -46,20 +46,20 @@ async function createNote() {
   <span style="font-size: 18px">Create Note</span>
 
   <create-content
-      
+
       on:change="{e => content = e.target.value}"
       style="margin-top: 16px"
     ></create-content>
 
-  
+
 
   <create-date-time
-      
+
       on:change="{e => timestamp = e.target.value}"
       style="margin-top: 16px"
     ></create-date-time>
 
-  <mwc-button 
+  <mwc-button
     label="Create Note"
     disabled={!(content && author && timestamp)}
     on:click="{() => createNote()}"
